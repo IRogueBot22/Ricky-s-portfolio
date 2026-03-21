@@ -10,25 +10,25 @@ export default function Footer() {
         <motion.div className="footer-brand" variants={fadeUp}>
           <p className="footer-name">Ricky Raj illuri</p>
           <p className="footer-quote">
-            "I design digital experiences that are simple, clear, and visually memorable. 
-            From interfaces to graphics, my work balances usability, strong typography, 
+            "I design digital experiences that are simple, clear, and visually memorable.
+            From interfaces to graphics, my work balances usability, strong typography,
             and a consistent visual voice."
           </p>
           <div className="footer-socials">
-            <motion.a 
-              href="https://www.instagram.com/rix.designs._" 
-              target="_blank" 
-              rel="noreferrer" 
-              className="social-btn" 
+            <motion.a
+              href="https://www.instagram.com/rix.designs._"
+              target="_blank"
+              rel="noreferrer"
+              className="social-btn"
               whileHover={{ scale: 1.12 }}
             >
               <Instagram size={20} />
             </motion.a>
-            <motion.a 
-              href="https://www.linkedin.com/in/illuri-ricky-raj-04197a32a/" 
-              target="_blank" 
-              rel="noreferrer" 
-              className="social-btn" 
+            <motion.a
+              href="https://www.linkedin.com/in/illuri-ricky-raj-04197a32a/"
+              target="_blank"
+              rel="noreferrer"
+              className="social-btn"
               whileHover={{ scale: 1.12 }}
             >
               <Linkedin size={20} />
@@ -40,7 +40,7 @@ export default function Footer() {
           {[
             { label: "Home", href: "#home" },
             { label: "Service", href: "#services" },
-            { label: "Resume", href: "/ricky_raj_resume.pdf", external: true },
+            { label: "Resume", href: "/Ricky_illluri_Resume.pdf", external: true },
             { label: "Projects", href: "#projects" }
           ].map(l => (
             <a key={l.label} href={l.href} target={l.external ? "_blank" : undefined} rel={l.external ? "noreferrer" : undefined} className="footer-link">{l.label}</a>
